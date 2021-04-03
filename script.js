@@ -12,7 +12,6 @@ function timeblock(selectorJQ, timeSet) {
         selectorJQ.css("background-color", "rgb(000, 255, 000)");
     };
 };
-
 timeblock($("#09am"),9);
 timeblock($("#10am"),10);
 timeblock($("#11am"),11);
@@ -53,3 +52,40 @@ if (storedSchedule !== null) {
     localStorage.setItem("storedSchedule", JSON.stringify(scheduler));
 };
 
+// Save text in local storage
+$("#btn09").click(function(){
+    storedSchedule.am09 = $("#text09").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn10").click(function(){
+    storedSchedule.am10 = $("#text10").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn11").click(function(){
+    storedSchedule.am11 = $("#text11").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn12").click(function(){
+    storedSchedule.pm12 = $("#text12").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn13").click(function(){
+    storedSchedule.pm01 = $("#text13").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn14").click(function(){
+    storedSchedule.pm02 = $("#text14").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn15").click(function(){
+    storedSchedule.pm03 = $("#text15").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn16").click(function(){
+    storedSchedule.pm04 = $("#text16").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
+$("#btn17").click(function(){
+    storedSchedule.pm05 = $("#text17").val();
+    localStorage.setItem("storedSchedule", JSON.stringify(storedSchedule));
+});
